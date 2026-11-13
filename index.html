@@ -76,9 +76,14 @@
       gap: 0.25rem;
       min-width: 0;
     }
-    .brand img {
-      width: min(320px, 100%);
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.65rem 1.1rem;
     }
+    .brand-logos .mmm-logo { width: min(280px, 46vw); }
+    .brand-logos .god-bless-logo { width: min(200px, 38vw); }
     .byline {
       margin: 0;
       font-size: 0.95rem;
@@ -293,16 +298,34 @@
       text-align: center;
     }
     footer a { color: var(--gold-light); }
-    footer .mmm {
-      width: min(260px, 80%);
+    footer .footer-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.85rem 1.4rem;
       margin: 0 auto 1rem;
     }
+    footer .footer-logos img { width: min(200px, 42%); }
     footer p { margin: 0.35rem 0; }
-    .footer-fine {
-      font-size: 0.85rem;
-      color: #cbbfe0;
-      margin-top: 1rem;
+    .price {
+      font-weight: 700;
+      color: var(--purple-deep);
+      margin: 0 0 0.35rem !important;
     }
+    .free-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      margin: 0 auto 0.65rem;
+    }
+    #sample h2 { margin-top: 0.25rem; }
   </style>
 </head>
 <body>
@@ -312,7 +335,10 @@
   <header>
     <div class="header-inner">
       <div class="brand">
-        <img src="images/mmm-logo.jpg" width="1000" height="399" alt="Medical Moses Media logo: Moses parts the waters around the letters MMM, with the words Compassion, Connection, Advocacy, Hope.">
+        <div class="brand-logos">
+          <img class="mmm-logo" src="images/mmm-logo.jpg" width="1000" height="399" alt="Medical Moses Media logo: Moses parts the waters around the letters MMM, with the words Compassion, Connection, Advocacy, Hope.">
+          <img class="god-bless-logo" src="images/god-bless-logo.jpg" width="900" height="508" alt="God Bless logo: a gold and purple shield with a crown and an ichthys, the words God Bless, and a Medical Moses Media copyright line.">
+        </div>
         <p class="byline">A story world by <strong>Bri Fitz</strong> · Medical Moses Media</p>
       </div>
       <nav aria-label="Page">
@@ -324,7 +350,7 @@
   </header>
 
   <div class="hero">
-    <img src="images/bible-high-hero.jpg" width="1600" height="900" alt="A sparkling Bible High scene of the school and its students, with the motto Faith, Friends, Purpose and banners that say Courage, Faith, Purpose, and Go Lions.">
+    <img src="images/bible-high-class.jpg" width="1536" height="864" alt="The Bible High class stands together in front of the school: Jonah in a whale hoodie, Esther, Jesus, Moses, Samson in a Lions jersey, Mary, and Ruth, with lockers, a school bus, and banners for Courage, Faith, Purpose, and Go Lions.">
     <div class="hero-text">
       <p class="kicker">Medical Moses Media presents</p>
       <h1>Bible High Comics</h1>
@@ -340,10 +366,10 @@
       <h2>Welcome to Bible High</h2>
       <div class="about-grid">
         <div class="about-copy">
-          <p>Bible High is a faith-forward comic series from <strong>Bri Fitz</strong> and <strong>Medical Moses Media</strong>. Familiar Bible names show up as classmates and teammates at a very unusual high school, where old and new stories meet lockers, pep rallies, and basketball practice.</p>
-          <p>The core of the world is <strong>Tall Saul</strong>, the <strong>Lions</strong> school basketball team, and <strong>Jesus</strong> as a new teammate. The stories are about belonging, teamwork, and grace — told with humor, warmth, and wonder, not as a sermon.</p>
-          <p>Each issue has two stories for readers ages 7 to 12, and for the families, Sunday school classes, and homeschoolers who read with them. One story is adapted from the Bible High animated series, and the other is a brand-new original. Every story stays true to the Bible account, so kids can read, laugh, and then go find the real story in Scripture.</p>
-          <p>Bri is a disabled creator and a breast cancer survivor. Her faith and experience shape this work.</p>
+          <p>Bible High is a faith-forward comic series where Old Testament and New Testament tales collide in a rotating mashup. Every story is based on real Bible accounts and packed with Easter eggs on purpose, so families can open the Good Book and read the original story together.</p>
+          <p>At the end of each story, we show readers exactly where to find it in the Bible. The setting is new, but the lessons remain.</p>
+          <p>— Medical Moses Media</p>
+          <p>Medical Moses Media is by a disabled creator and breast cancer survivor.</p>
         </div>
         <img class="still" src="images/jonah-aquatics.jpg" width="1000" height="666" alt="Three Bible High students push a Nineveh Aquatic Club cart, with the school’s blue whale mascot riding on the bottom shelf, into a gym under a Bible High Lions banner.">
       </div>
@@ -358,7 +384,8 @@
           <div class="comic-body">
             <h3>Bible High Comics #1: Jonah and the Whale Mascot &amp; Samson and Three Hundred Foxbots</h3>
             <p>Jonah runs from a big job and ends up face to face with the school’s whale mascot. Samson takes on a robotics challenge with three hundred Foxbots.</p>
-            <a class="btn" href="https://www.amazon.com/Bible-High-Comics-Hundred-Foxbots-ebook/dp/B0HLR519DB" rel="noopener noreferrer">Read on Amazon Kindle</a>
+            <p class="price">$2.99</p>
+            <a class="btn" href="https://www.amazon.com/Bible-High-Comics-Hundred-Foxbots-ebook/dp/B0HLR519DB" rel="noopener noreferrer">Buy on Amazon Kindle</a>
           </div>
         </article>
         <article class="comic-card">
@@ -366,7 +393,8 @@
           <div class="comic-body">
             <h3>Bible High Comics #2: Peter's 3 Chances and Gideon and The Capture-The-Flag Giants</h3>
             <p>Peter gets three chances to do the right thing when the pressure is on. Gideon and a small gym-class team face the biggest players on the field.</p>
-            <a class="btn" href="https://www.amazon.com/Bible-High-Comics-Capture-Flag-ebook/dp/B0HMJMN8MQ" rel="noopener noreferrer">Read on Amazon Kindle</a>
+            <p class="price">$2.99</p>
+            <a class="btn" href="https://www.amazon.com/Bible-High-Comics-Capture-Flag-ebook/dp/B0HMJMN8MQ" rel="noopener noreferrer">Buy on Amazon Kindle</a>
           </div>
         </article>
         <article class="comic-card">
@@ -374,16 +402,18 @@
           <div class="comic-body">
             <h3>Bible High Comics #3: Joshua vs. Jericho: Wall of Sound &amp; David Joins the Lions</h3>
             <p>Joshua’s march becomes a wall of sound, and new kid David makes the Lions basketball team. A story about courage, teamwork, and making room for every player.</p>
+            <p class="price">$2.99</p>
             <!-- DRAFT: Replace this search URL with the official Amazon /dp/ ASIN link once it is confirmed. -->
-            <a class="btn" href="https://www.amazon.com/s?k=Bible+High+Comics+%233+Joshua+vs.+Jericho+Wall+of+Sound+Medical+Moses&amp;i=digital-text" rel="noopener noreferrer">Find on Amazon Kindle</a>
+            <a class="btn" href="https://www.amazon.com/s?k=Bible+High+Comics+%233+Joshua+vs.+Jericho+Wall+of+Sound+Medical+Moses&amp;i=digital-text" rel="noopener noreferrer">Buy on Amazon Kindle</a>
           </div>
         </article>
       </div>
     </section>
 
     <section id="sample">
-      <h2>Free sample: Jonah and the Whale Mascot</h2>
-      <p class="section-intro">Here is Jonah’s story from Bible High Comics #1 — the cover and all eight story pages. This is a sample of one story, not the full issue. Samson and Three Hundred Foxbots is in the issue on Kindle.</p>
+      <p class="free-badge">Free sample</p>
+      <h2>Jonah and the Whale Mascot</h2>
+      <p class="section-intro">This is a free sample of Jonah’s story from Bible High Comics #1 — the cover and all eight story pages. It is one story, not the full issue. Samson and Three Hundred Foxbots is in the issue on Kindle.</p>
       <div class="sample-stills">
         <img src="images/jonah-peekaboo.jpg" width="900" height="1124" alt="A Nineveh Aquatics spirit captain looks surprised in the school hallway as Jonah peeks out from inside the blue whale mascot on a supply cart.">
         <img src="images/nineveh-hallway.jpg" width="1000" height="800" alt="Students walk a Bible High hallway lined with purple lockers and a Nineveh banner, in a scene from the Jonah story world.">
@@ -435,12 +465,13 @@
   </main>
 
   <footer>
-    <img class="mmm" src="images/mmm-logo.jpg" width="1000" height="399" alt="">
-    <p><strong>Medical Moses Media</strong></p>
-    <p>Created by Bri Fitz</p>
-    <p><a href="mailto:thebrifitz@gmail.com">thebrifitz@gmail.com</a></p>
+    <div class="footer-logos">
+      <img src="images/mmm-logo.jpg" width="1000" height="399" alt="Medical Moses Media logo: Moses parts the waters around the letters MMM, with the words Compassion, Connection, Advocacy, Hope.">
+      <img src="images/god-bless-logo.jpg" width="900" height="508" alt="God Bless logo: a gold and purple shield with a crown and an ichthys, the words God Bless, and a Medical Moses Media copyright line.">
+    </div>
+    <p>Created by Medical Moses Media</p>
+    <p><a href="mailto:labyrinthseeker@outlook.com">labyrinthseeker@outlook.com</a></p>
     <p>YouTube: <a href="https://www.youtube.com/@MedicalMosesMedia" rel="noopener noreferrer">@MedicalMosesMedia</a></p>
-    <p class="footer-fine">Bible High © Bri Fitz / Medical Moses Media. This is a private draft for review and is not a live website. Kindle links go to Amazon.</p>
   </footer>
 </body>
 </html>
