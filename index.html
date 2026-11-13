@@ -27,7 +27,7 @@
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif;
+      font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
       color: var(--ink);
       background: var(--cream);
       line-height: 1.6;
@@ -212,7 +212,7 @@
       .cast-grid { grid-template-columns: repeat(3, 1fr); }
     }
     @media (min-width: 1000px) {
-      .cast-grid { grid-template-columns: repeat(4, 1fr); }
+      .cast-grid { grid-template-columns: repeat(3, 1fr); }
     }
     .cast-grid figure {
       margin: 0;
@@ -363,10 +363,11 @@
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>.hero h1, .hero .motto { font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif; } .hero h1 { font-weight: 700; letter-spacing: 0.01em; }</style>
   <style>.welcome-pics { display: grid; gap: 1rem; align-content: start; } .welcome-pics .still { width: 100%; height: auto; margin: 0; }</style>
   <style>.issue-label { font-family: "Fredoka", system-ui, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--purple-deep); letter-spacing: 0.04em; margin: -0.25rem 0 0.75rem; }</style>
+  <style>h1, h2, h3, .kicker, .motto, .issue-label, .free-badge, .cast-grid figcaption { font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif; } .cast-more { text-align: center; font-size: 1.1rem; margin-top: 1.25rem; }</style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -424,78 +425,31 @@
       <p class="section-intro">The students of Bible High. Each card introduces a familiar name from Scripture in the hallways of school.</p>
       <div class="cast-grid">
         <figure>
-          <img src="images/cast/caleb.jpg" width="800" height="1200" alt="Caleb looks toward the distance in a cap and vest, on a Bible High Character Bible card.">
-          <figcaption>Caleb</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/david.jpg" width="800" height="1200" alt="David in a Lions basketball jersey, holding a ball, on a Bible High Character Bible card.">
-          <figcaption>David</figcaption>
-        </figure>
-        <figure>
           <img src="images/cast/esther.jpg" width="800" height="999" alt="Esther in a purple jacket and tiara, labeled Prom Queen and Ambassador.">
           <figcaption>Esther</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/gideon.jpg" width="800" height="1133" alt="Gideon at a planning table with maps and a lantern, on a Bible High Character Bible card.">
-          <figcaption>Gideon</figcaption>
         </figure>
         <figure>
           <img src="images/cast/jesus.jpg" width="800" height="999" alt="Jesus in a hallway with a backpack and cross necklace, labeled Transfer Student.">
           <figcaption>Jesus</figcaption>
         </figure>
         <figure>
-          <img src="images/cast/johnny-b.jpg" width="800" height="1132" alt="Johnny B standing outdoors with a staff, on a Bible High Character Bible card.">
-          <figcaption>Johnny B</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/joshua.jpg" width="800" height="1132" alt="Joshua holding a trumpet in a Bible High jacket, on a Bible High Character Bible card.">
-          <figcaption>Joshua</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/mary.jpg" width="800" height="1200" alt="Mary holding a book titled The Gospels, on a Bible High Character Bible card.">
-          <figcaption>Mary</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/matthew.jpg" width="800" height="1132" alt="Matthew holding a Bible High Herald notebook, on a Bible High Character Bible card.">
-          <figcaption>Matthew</figcaption>
-        </figure>
-        <figure>
           <img src="images/cast/moses.jpg" width="800" height="999" alt="Moses in a teal hoodie and backpack, labeled Student Council President.">
           <figcaption>Moses</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/paul.jpg" width="800" height="1132" alt="Paul holding a Herald notebook, on a Bible High Character Bible card.">
-          <figcaption>Paul</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/priscilla.jpg" width="800" height="1035" alt="Priscilla building a robot in the robotics club, on a Bible High Character Bible card.">
-          <figcaption>Priscilla</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/ruth.jpg" width="800" height="1132" alt="Ruth in a green jacket and braid, on a Bible High Character Bible card.">
-          <figcaption>Ruth</figcaption>
         </figure>
         <figure>
           <img src="images/cast/samson.jpg" width="800" height="999" alt="Samson in a purple and gold Lions jersey, labeled Jock.">
           <figcaption>Samson</figcaption>
         </figure>
         <figure>
-          <img src="images/cast/saul.jpg" width="800" height="1132" alt="Saul in a Lions number 1 basketball uniform, on a Bible High basketball player card.">
-          <figcaption>Saul</figcaption>
+          <img src="images/cast/david.jpg" width="800" height="1200" alt="David in a Lions basketball jersey, holding a ball, on a Bible High Character Bible card.">
+          <figcaption>David</figcaption>
         </figure>
         <figure>
-          <img src="images/cast/solomon.jpg" width="800" height="1198" alt="Solomon writing music at a desk, on a Bible High Character Bible card.">
-          <figcaption>Solomon</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/stephen.jpg" width="800" height="1035" alt="Stephen building a robot in a red hoodie, on a Bible High Character Bible card.">
-          <figcaption>Stephen</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/thomas.jpg" width="800" height="1132" alt="Thomas in a varsity jacket, on a Bible High Character Bible card.">
-          <figcaption>Thomas</figcaption>
+          <img src="images/cast/mary.jpg" width="800" height="1200" alt="Mary holding a book titled The Gospels, on a Bible High Character Bible card.">
+          <figcaption>Mary</figcaption>
         </figure>
       </div>
+      <p class="cast-more">…and many more! Meet the whole Bible High crew in the comics. <a href="#comics">Read the comics on Kindle</a></p>
     </section>
 
     <section id="comics">
