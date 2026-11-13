@@ -369,6 +369,7 @@
   <style>.issue-label { font-family: "Fredoka", system-ui, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--purple-deep); letter-spacing: 0.04em; margin: -0.25rem 0 0.75rem; }</style>
   <style>h1, h2, h3, .kicker, .motto, .issue-label, .free-badge, .cast-grid figcaption { font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif; } .cast-more { text-align: center; font-size: 1.1rem; margin-top: 1.25rem; }</style>
   <style>.hook { font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--purple-deep); } .ideas-form { max-width: 760px; margin: 0 auto; background: #fff; border-radius: 12px; overflow: hidden; } .ideas-form iframe { display: block; border: 0; }</style>
+  <style>.more-card { grid-column: span 2; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 0.75rem; padding: 2rem 1.5rem; border-radius: 12px; text-decoration: none; color: #fff; background: linear-gradient(135deg, #3b1a6b 0%, #5b2a9b 55%, #c9a227 140%); box-shadow: var(--shadow); border: 3px solid #e2b93b; } .more-card .more-big { font-family: "Fredoka", "Comic Sans MS", system-ui, sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #ffd95a; text-shadow: 2px 2px 0 #2a0f50; } .more-card .more-sub { font-size: 1.15rem; max-width: 22rem; } .more-card .more-link { font-weight: 700; background: #ffd95a; color: #2a0f50; padding: 0.5rem 1rem; border-radius: 999px; } .more-card:hover .more-link { background: #fff; }</style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -444,16 +445,12 @@
           <img src="images/cast/samson.jpg" width="800" height="999" alt="Samson in a purple and gold Lions jersey, labeled Jock.">
           <figcaption>Samson</figcaption>
         </figure>
-        <figure>
-          <img src="images/cast/david.jpg" width="800" height="1200" alt="David in a Lions basketball jersey, holding a ball, on a Bible High Character Bible card.">
-          <figcaption>David</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cast/mary.jpg" width="800" height="1200" alt="Mary holding a book titled The Gospels, on a Bible High Character Bible card.">
-          <figcaption>Mary</figcaption>
-        </figure>
+        <a class="more-card" href="#comics">
+          <span class="more-big">…and many more!</span>
+          <span class="more-sub">Characters from all throughout the Bible fill the halls of Bible High.</span>
+          <span class="more-link">Meet them in the comics on Kindle</span>
+        </a>
       </div>
-      <p class="cast-more">…and many more! Meet the whole Bible High crew in the comics. <a href="#comics">Read the comics on Kindle</a></p>
     </section>
 
     <section id="comics">
